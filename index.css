@@ -1,0 +1,130 @@
+/* reset default value */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.img-container {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+
+
+.company-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo {
+    font-family: permanent marker;
+    color: #fff;
+    background: #000;
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+    margin-right: .5rem;
+}
+.comp-name {
+    font-family: Roboto;
+    background: #000;
+    color: #fff;
+    display: inline;
+    padding: .5rem;
+}
+
+.bridge-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* form part */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(10,10,10,.7);
+    font-family: Roboto;
+    padding: 1rem;
+}
+.contact-form h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.email-field {
+    margin: 1rem 0;
+}
+.message-field {
+    margin-bottom: 1rem;
+}
+
+.input-field, .message-field {
+    padding: .5rem;
+    border: none;
+    font-family: Roboto;
+    border-radius: .1rem;
+    background-color: rgb(10,10,10);
+    color: #fff;
+}
+.submit-btn {
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: rgb(240, 240, 240);
+    color: rgb(19, 19, 19);
+}
+.submit-btn:hover, .submit-btn:focus {
+    background-color: rgb(45, 45, 230);
+    color: #fff;
+}
+
+/* for larger screen */
+@media screen and (min-width: 740px) {
+    .container {
+        display: flex;
+        width: 90%;
+    }
+    .img-container {
+        height: 28rem;
+    }
+    .company-info {
+        flex-direction: column;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: .8rem;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .container {
+        width: 70%;
+    }
+}
